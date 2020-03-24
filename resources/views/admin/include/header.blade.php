@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>TAMBOLA</title>
+    <title>Rising Globe Technology And Management</title>
     {{-- <link rel="icon" href="{{ asset('logo/logo.png')}}" type="image/icon type"> --}}
 
 
@@ -57,7 +57,7 @@
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
               <a href="{{route('admin.deshboard')}}" class="site_title">
-                TAMBOLA
+                Rising Globe Technology And Management
                 {{-- <img src="{{ asset('logo/logo.png')}}" height="50" style=" width: 50%;"> --}}
               </a>
             </div>
@@ -83,7 +83,28 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="{{ route('admin.deshboard')}}"><i class="fa fa-home"></i> Home </span></a>
+                  <li>
+                    <a href="{{ route('admin.deshboard')}}"><i class="fa fa-home"></i> Home </span></a>
+                  </li>
+                  <li>
+                    <a href="{{ route('admin.course_list')}}"><i class="fa fa-home"></i> Courses </span></a>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Configuration <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a><i class="fa fa-bar-chart-o"></i>State <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li><a href="#">Add New State</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a><i class="fa fa-bar-chart-o"></i>City <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li><a href="#">Add New City</a></li>
+                          <li><a href="#">City List</a></li>
+                        </ul>
+                      </li>
+
+                    </ul>
                   </li>
                   <li><a href="#"><i class="fa fa-key" aria-hidden="true"></i>Change Password</a></li>
 

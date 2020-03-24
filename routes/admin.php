@@ -6,6 +6,7 @@ Route::group(['namespace' => 'Admin'],function(){
 
     Route::group(['middleware'=>'auth:admin','prefix'=>'admin'],function(){
         Route::get('/dashboard', 'DashboardController@dashboardView')->name('admin.deshboard');
+        Route::get('/course/list','CourseController@CourseList')->name('admin.course_list');
     });
 
 });

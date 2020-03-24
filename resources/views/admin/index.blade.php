@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TAMBOLA</title>
+    <title>Rising Globe Technology And Management</title>
     {{-- <link rel="icon" href="{{ asset('/logo/logo.png')}}" type="image/icon type"> --}}
 
     <!-- Bootstrap -->
@@ -72,10 +72,10 @@
 
                 <div>
                   <h1>
-                    TAMBOLA
+                    Rising Globe Technology And Management
                     {{-- <img src="{{ asset('logo/logo.png')}}" height="150"> --}}
                   </h1>
-                  <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                  <p>©2020 All Rights Reserved. Rising Globe Technology And Management. Privacy and Terms</p>
                 </div>
               </div>
             {{ Form::close() }}

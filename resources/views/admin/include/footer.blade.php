@@ -1,7 +1,7 @@
        <!-- footer content -->
         <footer style="background-color: transparent;">
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            Rising Globe Technology And Management
           </div>
           <div class="clearfix"></div>
         </footer>
