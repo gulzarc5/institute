@@ -86,6 +86,15 @@
                   <li>
                     <a href="{{ route('admin.deshboard')}}"><i class="fa fa-home"></i> Home </span></a>
                   </li>
+                  
+                  <li><a><i class="fa fa-edit"></i> Students <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                     <li class="sub_menu"><a href="{{route('admin.student_insert_form')}}">Add New Student</a>
+                     </li>
+                     <li class="sub_menu"><a href="#">Student List</a>
+                     </li>
+                   </ul>
+                 </li>
                   <li>
                     <a href="{{ route('admin.course_list')}}"><i class="fa fa-home"></i> Courses </span></a>
                   </li>
