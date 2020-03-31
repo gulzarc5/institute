@@ -5,6 +5,9 @@
     return view('web.index');
     })->name('web.index');
 
+    Route::get('/Courses', function () {
+    return view('web.courses.courses');
+    })->name('web.courses.courses');
 
     Route::get('/About', function () {
     return view('web.about.about');
@@ -14,19 +17,11 @@
         return view('web.gallery.gallery');
     })->name('web.gallery.gallery');
 
-    // Route::get('/Class/Syllabus', function () {
-    //     return view('web.syllabus.syllabus');
-    // })->name('web.syllabus.syllabus');
-
-    // Route::get('/Acheivement', function () {
-    //     return view('web.acheivement.acheivement');
-    // })->name('web.acheivement.acheivement');   
+    Route::get('/Result', function () {
+    return view('web.result.result');
+    })->name('web.result.result'); 
 
     Route::get('/Contact', function () {
-        return view('web.contact.contact');
-    })->name('web.contact.contact');
-
-    // Route::get('/Forgot-password', function () {
-    //     return view('web.forgot-password');
-    // })->name('web.forgot-password');
+        return view('web.contact');
+    })->name('web.contact');
 

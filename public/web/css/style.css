@@ -40,6 +40,7 @@
 /*----------------------------------------*/
 /*  1. Template default CSS
 /*----------------------------------------*/
+@import url("custom.css");
 /*-- Google Font --*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 /*-- Common Style --*/
@@ -795,8 +796,7 @@ a:hover {
       padding-bottom: 170px; } }
   @media only screen and (max-width: 767px) {
     .pb-270 {
-      padding-bottom: 100px; } }
-
+      padding-bottom: 100px; }}
 .pb-290 {
   padding-bottom: 290px; }
 
@@ -1453,7 +1453,9 @@ textarea:focus {
     color: #413f3f;
     text-transform: uppercase;
     display: inline-block;
-    line-height: 87px;font-weight: 500;}
+    line-height: 87px;font-weight: 500;
+    text-decoration: none;
+     font-family: "Roboto", sans-serif;}
     .main-menu nav ul li a i {
       color: #ff7f00;
       font-size: 12px; }
@@ -1712,7 +1714,7 @@ textarea:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-bottom {
-    padding: 20px 0; } }
+    padding: 0; } }
 
 @media only screen and (max-width: 767px) {
   .header-bottom {
@@ -2704,7 +2706,7 @@ textarea:focus {
         width: 100%; } }
 
 .breadcrumb-bottom {
-  background-color: #ff850d;
+  background-color: #f9c10a;
   padding: 14px 0 12px; }
   .breadcrumb-bottom ul li {
     display: -webkit-box;
@@ -2733,7 +2735,7 @@ textarea:focus {
         top: -1px; }
 
 .breadcrumb-top.default-overlay:before {
-  background-color: #000;
+  background-color: #005298;
   opacity: .65; }
 
 .breadcrumb-top.breadcrumb-overly-2.default-overlay:before {
@@ -3679,7 +3681,7 @@ textarea:focus {
       margin: 0 0 5px; }
 
 .single-event .event-content {
-  padding: 24px 30px 30px; }
+  padding: 24px 30px 24px;}
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-event .event-content {
       padding: 24px 15px 30px; } }
@@ -3688,7 +3690,7 @@ textarea:focus {
       padding: 24px 22px 30px; } }
   @media only screen and (max-width: 767px) {
     .single-event .event-content {
-      padding: 20px 12px 26px; } }
+      padding: 20px 12px 26px;min-height: 196px; } }
       .single-event .event-content h3 a:hover {color: #2c2254!important;}
   .single-event .event-content h3 {
     font-size: 16px;
@@ -3704,14 +3706,14 @@ textarea:focus {
         font-size: 17px; } }
   .single-event .event-content p {
     line-height: 23px;
-    margin: 12px 0 24px; }
+    margin: 0; font-weight: 500}
   .single-event .event-content .event-meta-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: flex-end; }
     .single-event .event-content .event-meta-wrap .event-meta i {
       width: 25px;
       height: 25px;
@@ -6133,7 +6135,7 @@ textarea:focus {
   box-shadow: 0px 6px 12px 0.8px rgba(14, 14, 14, 0.26);
   padding: 23px 40px 20px;
   border-radius: 50px;
-  margin-top: 47px; }
+  margin-top: 10px; }
   @media only screen and (max-width: 767px) {
     .contact-form form button {
       margin-top: 30px; } }

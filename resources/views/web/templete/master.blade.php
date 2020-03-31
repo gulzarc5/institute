@@ -17,7 +17,8 @@
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="{{asset('web/css/plugins.css')}}">    
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="{{asset('web/css/style.css')}}">    
+    <link rel="stylesheet" href="{{asset('web/css/style.css')}}">
+    @yield('meta') 
     <!-- Modernizer JS -->
     <script src="{{asset('web/js/vendor/modernizr-2.8.3.min.js')}}"></script>
 </head>
@@ -35,7 +36,6 @@
 
 
         <!-- ====================== JS ====================== -->
-        @yield('script')
         <!-- jQuery JS -->
         <script src="{{asset('web/js/vendor/jquery-1.12.4.min.js')}}"></script>
         <!-- Popper JS -->
@@ -48,6 +48,7 @@
         <script src="{{asset('web/js/ajax-mail.js')}}"></script>
         <!-- Main JS -->
         <script src="{{asset('web/js/main.js')}}"></script>
+        @yield('script')
     </section>    
 </body>
 </html>

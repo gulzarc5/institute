@@ -7,7 +7,7 @@
                                 <div class="header-contact">
                                     <ul>
                                         <li><i class="fa fa-phone"></i>  +91 9435101808</li>
-                                        <li><i class="fa fa-envelope-o"></i><a href="#">angshumanb73@gmail.com</a></li>
+                                        <li><i class="fa fa-envelope-o"></i><a href="#">rgtmhkd@gmail.com.</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -15,9 +15,7 @@
                                 <div class="login-register">
                                     <ul>
                                         <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                                        <li><a class="twitter" href="https://www.linkedin.com/in/angshuman-bhattacharjee-7668486b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXiojsFibQRCHSukiXl7ynA%3D%3D"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a class="youtube" href="#"><i class="fa fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -30,7 +28,7 @@
                             <div class="col-lg-4 col-md-6 col-4">
                                 <div class="logo" style="margin-top: 5px">
                                     <a href="{{route('web.index')}}">
-                                        <img alt="error" src="{{asset('web/img/logo/logo.png')}}" style="width: 100%">
+                                        <img alt="error" src="{{asset('web/img/logo/logo.png')}}">
                                     </a>
                                 </div>
                             </div>
@@ -39,18 +37,12 @@
                                     <div class="main-menu">
                                         <nav>
                                             <ul>
-                                                <li><a href="index.php"> HOME </a></li>
-                                                <li><a href="about.php"> ABOUT  </a></li>    
-                                                <li><a href="#"> Courses <i class="fa fa-angle-down"></i> </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="dimt.php">Dermatoglyphic Multiple Intelligence Test</a></li>
-                                                        <li><a href="pa.php">Psychometric Assessment </a></li>
-                                                        <li><a href="best.php">Brain Checker Engineering Sorter Test</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="achievement.php">Result</a></li>
-                                                <li><a href="gallery.php">Gallery</a></li>
-                                                <li><a href="contact.php"> CONTACT </a></li>
+                                                <li><a href="{{route('web.index')}}"> HOME </a></li>
+                                                <li><a href="{{route('web.about.about')}}"> ABOUT  </a></li>    
+                                                <li><a href="{{route('web.courses.courses')}}"> Courses </a></li>
+                                                <li><a href="{{route('web.result.result')}}">Result</a></li>
+                                                <li><a href="{{route('web.gallery.gallery')}}">Gallery</a></li>
+                                                <li><a href="{{route('web.contact')}}"> Contact </a></li>
                                             </ul>
                                         </nav>
                                     </div>

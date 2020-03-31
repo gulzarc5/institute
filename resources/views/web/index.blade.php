@@ -3,114 +3,172 @@
 	    {{-- META --}}
 	    @section('meta')
 	     <title>institute</title>
+	     <style>.single-event .event-content ul li:before {left: 8%;}</style>
 	    @endsection
 
 	    @section('content') 
 	        <div class="slider-area ">
 			    <div class="slider-active-2 owl-carousel nav-style-2">
 			        <div class="single-slider slider-height-3 bg-img pt-170" style="background-image:url({{asset('web/img/slider/slider-6.jpg')}});"> </div>
-			        <div class="single-slider slider-height-3 bg-img pt-170" style="background-image:url({{asset('web/img/slider/slider-7.jpg')}});">
-			        </div>
+			        <div class="single-slider slider-height-3 bg-img pt-170" style="background-image:url({{asset('web/img/slider/slider-7.jpg')}});"> </div>
 			    </div>
 			</div>
-			<div class="about-us pt-50 pb-70">
+			<div class="about-us pt-50 pb-50">
 			    <div class="container">
 			        <div class="row">
 			            <div class="col-lg-6 col-md-6">
 			                <div class="about-content">
 			                    <div class="section-title section-title-green mb-10">
 			                        <h2>About <span>Us</span></h2>
-			                        <p>CareerON had been incepted in the year 2018 with a vision to create awareness and guide students to choose a subject to study.</p>                        
+			                        <p>Thank you for visiting RISING GLOBE TECHNOLOGY & MANAGENENT, RGTM, Academy for IT & Management;</p>                       
 			                    </div>
-			                    <p><strong class="orange">What in Career Counselling is all about ????</strong></p>
-			                    <p>After important milestones in education each one of us faces this question ‘what next’ after class 10th, after class 12th and after graduation. Career Counselling can help in all the major milestones in one's career. Firstly, to decide a stream and subject combinations, to decide the graduation course, and then, to decide the postgraduation and careeroption!<br>
-			                    It is at this point that a Career Counselling can help the child sail through these turbulent times. &nbsp;&nbsp; <a class="default-btn" href="about.php">Read More</a></p>
+			                    <p> RGTM was setup on 02.08.2017 with goal to serve Information Technology. It was started up as a partnership venture and Regd. as Educational Societies under Govt. of Assam Act I.P of 1932 & Act XXI OF 1860, bearing Registration No-RF/HAI/183/A/37 of 2017-2018. It is also ISO 9001:2015 Certified Institution under Govt. of India.<br>
+								It believes in the foundation of technology that computer science has brought new opportunities and challenges to traditional study style, and has changed the foundational concepts in education
+								 &nbsp;&nbsp; <a class="default-btn" href="about.php">Read More</a></p>
 			                </div>
 			            </div>
 			            <div class="col-lg-6 col-md-6">
-			                <div class="about-img ind-abt mt-90">
+			                <div class="about-img ind-abt mt-30">
 			                    <img src="{{asset('web/img/banner/index-about.jpg')}}" alt="">                    
+			                </div>
+			            </div>
+			            <div class="col-lg-12 col-md-12">
+			                <div class="about-content">
+			                    <div class="section-title section-title-green mb-10">
+			                        <h2>Director <span>Message</span></h2>
+			                        <p>“A good education is the first step to building a stable career”</p>                       
+			                    </div>
+			                    <p> It is my privilege to welcome you to RGTM, Academy for IT & Management and invite you to explore the multidimensional facets of this Technical Institute using the official website. The Institute has marked its presence as a leading teaching Institute. The Institute challenging and inspiring environment designed to mould students into leaders of tomorrow. The Institute is headed by a competent well experienced dedicated and devoted faculty.
+								 &nbsp;&nbsp; <a class="default-btn" href="about.php">Read More</a></p>
 			                </div>
 			            </div>
 			        </div>
 			    </div>
 			</div>
-			<div class="event-area bg-img default-overlay pt-130 pb-130" style="background-image:url({{asset('web/img/bg/bg-3.jpg')}});">
+			<div class="event-area bg-img default-overlay pt-50 pb-50" style="background-image:url({{asset('web/img/bg/bg-3.jpg')}});">
 			    <div class="container">
-			        <div class="section-title mb-75">
-			            <h2><span>Our</span> Event</h2>
-			            <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
+			        <div class="section-title section-title-green mb-50">
+			            <h2><span>Our</span> Courses</h2>
+			            <p>Our various courses to help you to make a carrer </p>
 			        </div>
 			        <div class="event-active owl-carousel nav-style-1">
+								
 			            <div class="single-event event-white-bg">
-			                <div class="event-img">
-			                    <a href="event-details.html"><img src="{{asset('web/img/event/1.jpg')}}" alt=""></a>
-			                    <div class="event-date-wrap">
-			                        <span class="event-date">1st</span>
-			                        <span>Dec</span>
-			                    </div>
-			                </div>
 			                <div class="event-content">
-			                    <h3><a href="event-details.html">Aempor incididunt ut labore ejam.</a></h3>
-			                    <p>Pvolupttem accusantium doloremque laudantium, totam erspiciatis unde omnis iste natus error .</p>
+			                    <h3><a>CERTIFICATE IN BASIC COMPUTER APPLICATION (CBCA)</a></h3>
+			                    <p>Eligibility- HSLC</p>
+			                    <ul>
+			                    	<li>Introduction of Computer Fundamentals.</li>
+									<li>Paint.</li>
+									<li>Notepad.</li>
+									<li>WordPad.</li>
+									<li>M.S Word.</li>
+									<li>M.S Excel.</li>
+									<li>M.S Power Point.</li>
+									<li>M.S Access.</li>
+									<li>Internet.</li>
+			                    </ul>
 			                    <div class="event-meta-wrap">
 			                        <div class="event-meta">
-			                            <i class="fa fa-location-arrow"></i>
-			                            <span>Mascot Plaza ,Uttara</span>
-			                        </div>
-			                        <div class="event-meta">
 			                            <i class="fa fa-clock-o"></i>
-			                            <span>11:00 am</span>
+			                            <span>3 Months</span>
 			                        </div>
 			                    </div>
 			                </div>
 			            </div>
+
 			            <div class="single-event event-white-bg">
-			                <div class="event-img">
-			                    <a href="event-details.html"><img src="{{asset('web/img/event/2.jpg')}}" alt=""></a>
-			                    <div class="event-date-wrap">
-			                        <span class="event-date">10th</span>
-			                        <span>Dec</span>
-			                    </div>
-			                </div>
-			                <div class="event-content">
-			                    <h3><a href="event-details.html">Global Conference on Business.</a></h3>
-			                    <p>Pvolupttem accusantium doloremque laudantium, totam erspiciatis unde omnis iste natus error .</p>
+			               <div class="event-content">
+			                    <h3><a>CERTIFICATE IN OFFICE AUTOMATION (COA)</a></h3>
+			                    <p>Eligibility- HSLC</p>
+			                    <ul>
+			                    	<li>Introduction of Computer Fundamentals.</li>
+									<li>Paint.</li>
+									<li>Notepad.</li>
+									<li>WordPad.</li>
+									<li>M.S Word.</li>
+									<li>M.S Excel.</li>
+									<li>M.S Power Point.</li>
+									<li>M.S Access.</li>
+									<li>Office Work.</li>
+									<li>Internet.</li>
+			                    </ul>
 			                    <div class="event-meta-wrap">
 			                        <div class="event-meta">
-			                            <i class="fa fa-location-arrow"></i>
-			                            <span>Shubastu ,Dadda</span>
-			                        </div>
-			                        <div class="event-meta">
 			                            <i class="fa fa-clock-o"></i>
-			                            <span>08:30 am</span>
+			                            <span>3 Months</span>
 			                        </div>
 			                    </div>
 			                </div>
 			            </div>
+
 			            <div class="single-event event-white-bg">
-			                <div class="event-img">
-			                    <a href="event-details.html"><img src="{{asset('web/img/event/3.jpg')}}" alt=""></a>
-			                    <div class="event-date-wrap">
-			                        <span class="event-date">1st</span>
-			                        <span>Dec</span>
-			                    </div>
-			                </div>
 			                <div class="event-content">
-			                    <h3><a href="event-details.html">Academic Conference Maui.</a></h3>
-			                    <p>Pvolupttem accusantium doloremque laudantium, totam erspiciatis unde omnis iste natus error .</p>
+			                    <h3><a>CERTIFICATE IN DESK TOP PUBLISHING (CDTP)</a></h3>
+			                    <p>Eligibility- HSLC</p>
+			                    <ul>
+			                    	<li>Introduction of Computer Fundamentals.</li>
+									<li>Paint.</li>
+									<li>Notepad.</li>
+									<li>WordPad.</li>
+									<li>M.S Word.</li>
+									<li>Page Maker.</li>
+									<li>Photoshop.</li>
+									<li>English & Bengali Type Writing.</li>
+									<li>Internet.</li>
+			                    </ul>
 			                    <div class="event-meta-wrap">
 			                        <div class="event-meta">
-			                            <i class="fa fa-location-arrow"></i>
-			                            <span>Banasree ,Rampura</span>
-			                        </div>
-			                        <div class="event-meta">
 			                            <i class="fa fa-clock-o"></i>
-			                            <span>10:00 am</span>
+			                            <span>3 Months</span>
 			                        </div>
 			                    </div>
 			                </div>
 			            </div>
+
+			            <div class="single-event event-white-bg">
+			               <div class="event-content">
+			                    <h3><a>CERTIFICATE IN TYPE WRITING (CTW)</a></h3>
+			                    <p>Eligibility- HSLC</p>
+			                    <ul>
+			                    	<li>Bengali.</li>
+									<li>Hindi.</li>
+									<li>Assamise.</li>
+			                    </ul>
+			                    <div class="event-meta-wrap">
+			                        <div class="event-meta">
+			                            <i class="fa fa-clock-o"></i>
+			                            <span>3 Months</span>
+			                        </div>
+			                    </div>
+			                </div> 
+			            </div>
+
+			            <div class="single-event event-white-bg">
+			                <div class="event-content">
+			                    <h3><a>CERTIFICATE IN SPOKEN ENGLISH (CSE)</a></h3>
+			                    <p>Eligibility- HSLC</p>
+			                    <ul>
+			                    	<li>Tense</li>
+									<li>Word Stock.</li>
+									<li>Personality development.</li>
+									<li>Voice Clarity.</li>
+									<li>Presentation.</li>	
+			                    </ul>
+			                    <div class="event-meta-wrap">
+			                        <div class="event-meta">
+			                            <i class="fa fa-clock-o"></i>
+			                            <span>3 Months</span>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+
+			        </div>
+			        <div class="row">
+			        	<div class="col-md-3 mx-auto text-center">
+			        		<a class="default-btn mt-50" style="font-size: 20px;" href="{{route('web.courses.courses')}}">More Corses</a>
+			        	</div>
 			        </div>
 			    </div>
 			</div>
@@ -118,11 +176,13 @@
 			    <div class="container">
 			        <div class="row">
 			            <div class="col-lg-6">
-			                <img src="{{asset('web/img/bg/iISO RGTM.jpg')}}"  style="width: 100%;">
+			                <img src="{{asset('web/img/bg/iISO RGTM.jpg')}}" class="certificate">
 			            </div>
 			            <div class="col-lg-6">
-			                <div class="choose-newsletter text-center ml-40">
-			                    <h4>CONTACT US </h4><br>
+			                <div class="choose-newsletter pb-70">
+			                    <div class="section-title mb-50">
+						            <h2><span>Contact</span> Us</h2>
+						        </div>
 			                    <form method="post" action="{{asset('web/SendGrid-API/send-email.php')}}">                        
 			                        <input name="name" placeholder="Name" type="text">                        
 			                        <input name="phone" placeholder="Phone" type="text">      
@@ -136,6 +196,8 @@
 			        </div>
 			    </div>
 			</div>
+
+
     	@endsection   
 
       

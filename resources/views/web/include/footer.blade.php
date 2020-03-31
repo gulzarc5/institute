@@ -1,26 +1,27 @@
         <footer class="footer-area">
-            <div class="footer-top bg-img default-overlay pt-130 pb-80" style="background-image:url({{asset('web/img/slider/slider-bg1.jpg')}});">
+            <div class="footer-top bg-img default-overlay pt-50 pb-50" style="background-image:url({{asset('web/img/slider/slider-bg1.jpg')}});">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-5 col-md-6 col-sm-6">
                             <div class="footer-widget mb-40">
                                 <div class="footer-title">
-                                    <img src="{{asset('web/img/logo/logo.png')}}" style="width: 100%;margin-top: -16px;">
+                                    <img src="{{asset('web/img/logo/logo.png')}}" style="width: 80%;margin-top: -16px;">
                                 </div>
                                 <div class="footer-about">
                                    
                                     <div class="f-contact-info">
                                         <div class="single-f-contact-info">
-                                            <i class="fa fa-home"></i>
-                                            <span>Angshuman Bhattacharjee, 2nd Floor, House NO – 88, Honu Boro Path, Kachari Basti, Near Passport Seva Kendra, Ganeshguri, Guwahati 781005</span>
+                                            <span>(An ISO 9001:2015 Certified Institution under Govt. of India)<br>
+                                            (Regd. as Educational Societies under Govt. of Assam Act I.P of 1932)</span>
+
                                         </div>
                                         <div class="single-f-contact-info">
                                             <i class="fa fa-envelope-o"></i>
-                                            <span><a href="#">angshumanb73@gmail.com</a></span>
+                                            <span><a href="#">rgtmhkd@gmail.com. </a></span>
                                         </div>
                                         <div class="single-f-contact-info">
                                             <i class="fa fa-phone"></i>
-                                            <span> +91 9435101808  <br>/ +91 9854076670 <br>/ +91 7002700854</span>
+                                            <span> +91 9435101808  / +91 7002700854</span>
                                         </div>
                                     </div>
                                 </div>
@@ -33,25 +34,12 @@
                                 </div>
                                 <div class="footer-list">
                                     <ul>
-                                        <li><a href="index.php">Home</a></li>
-                                        <li><a href="about.php">About Us</a></li>
-                                        <li><a href="process.php">Result</a></li>
-                                        <li><a href="#">Gallery</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6">
-                            <div class="footer-widget negative-mrg-30 mb-40">
-                                <div class="footer-title">
-                                    <h4>Courses</h4>
-                                </div>
-                                <div class="footer-list">
-                                    <ul>
-                                        <li><a href="#">DIMT </a></li>
-                                        <li><a href="#">Psychometric Assessment </a></li>
-                                        <li><a href="#">BEST</a></li>
+                                        <li><a href="{{route('web.index')}}">Home</a></li>
+                                        <li><a href="{{route('web.about.about')}}">About Us</a></li>
+                                        <li><a href="{{route('web.courses.courses')}}">Courses</a></li>
+                                        <li><a href="{{route('web.result.result')}}">Result</a></li>
+                                        <li><a href="{{route('web.gallery.gallery')}}">Gallery</a></li>
+                                        <li><a href="{{route('web.contact')}}">Contact </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -80,9 +68,7 @@
                                 <div class="footer-social">
                                     <ul>
                                         <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a class="twitter" href="#"><i class="fa fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
