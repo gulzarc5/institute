@@ -178,7 +178,7 @@
 			            <div class="col-lg-6">
 			                <img src="{{asset('web/img/bg/iISO RGTM.jpg')}}" class="certificate">
 			            </div>
-			            <div class="col-lg-6">
+			            <div class="col-lg-6 mt-30">
 			                <div class="choose-newsletter pb-70">
 			                    <div class="section-title mb-50">
 						            <h2><span>Contact</span> Us</h2>

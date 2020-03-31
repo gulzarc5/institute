@@ -2040,7 +2040,7 @@ textarea:focus {
 
 @media only screen and (max-width: 767px) {
      .slider-content-3.ml-55 {margin-left: 0;margin-top: 0;padding: 32px;} 
-     .slider-height-3 {height: 100%;}
+     .slider-height-3 {height: 120px;}
      .owl-carousel .owl-item .slider-height-3 img {display: block;width: 70%!important;}
      .slider-single-img2{display: flex;justify-content: center;}
    }

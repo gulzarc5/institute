@@ -53,20 +53,12 @@
                             <div class="mobile-menu">
                                 <nav id="mobile-menu-active">
                                     <ul class="menu-overflow">
-                                        <li><a href="index.php"> HOME </a></li>
-                                        <li><a href="about.php"> ABOUT  </a></li>                                    
-                                        <li><a href="process.php">Process</a></li>
-                                        <li><a href="#"> SERVICE <i class="fa fa-angle-down"></i> </a>
-                                            <ul class="submenu">
-                                                <li><a href="dimt.php">Dermatoglyphic Multiple Intelligence Test</a></li>
-                                                <li><a href="dimt.php">Psychometric Assessment </a></li>
-                                                <li><a href="dimt.php">Brain Checker Engineering Sorter Test</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="achievement.php">Achievement</a></li>
-                                        <li><a href="article.php">Article</a></li>
-                                        <li><a href="gallery.php">Gallery</a></li>
-                                        <li><a href="contact.php"> CONTACT </a></li>
+                                        <li><a href="{{route('web.index')}}"> HOME </a></li>
+                                        <li><a href="{{route('web.about.about')}}"> ABOUT  </a></li>    
+                                        <li><a href="{{route('web.courses.courses')}}"> Courses </a></li>
+                                        <li><a href="{{route('web.result.result')}}">Result</a></li>
+                                        <li><a href="{{route('web.gallery.gallery')}}">Gallery</a></li>
+                                        <li><a href="{{route('web.contact')}}"> Contact </a></li>
                                     </ul>
                                 </nav>
                             </div>
