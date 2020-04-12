@@ -166,8 +166,8 @@
                                 </div>
 
                                 <div class="col-md-12 col-sm-12 col-xs-12 mb-3">
-                                    <label for="address">Type Book Descrpition</label>
-                                    <textarea class="form-control" rows="6" name="address">{{ old('address') }}</textarea>
+                                    <label for="address">Type Address</label>
+                                    <textarea class="form-control" rows="6" name="address" placeholder="Type Address">{{ old('address') }}</textarea>
                                 </div>
                             </div>
                        </div>

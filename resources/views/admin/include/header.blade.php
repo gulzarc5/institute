@@ -91,14 +91,14 @@
                     <ul class="nav child_menu">
                      <li class="sub_menu"><a href="{{route('admin.student_insert_form')}}">Add New Student</a>
                      </li>
-                     <li class="sub_menu"><a href="#">Student List</a>
+                     <li class="sub_menu"><a href="{{route('admin.student_list')}}">Student List</a>
                      </li>
                    </ul>
                  </li>
                   <li>
                     <a href="{{ route('admin.course_list')}}"><i class="fa fa-home"></i> Courses </span></a>
                   </li>
-                  <li><a><i class="fa fa-bar-chart-o"></i> Configuration <span class="fa fa-chevron-down"></span></a>
+                  {{-- <li><a><i class="fa fa-bar-chart-o"></i> Configuration <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a><i class="fa fa-bar-chart-o"></i>State <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
@@ -114,8 +114,8 @@
                       </li>
 
                     </ul>
-                  </li>
-                  <li><a href="#"><i class="fa fa-key" aria-hidden="true"></i>Change Password</a></li>
+                  </li> --}}
+                  <li><a href="{{route('admin.change_password_form')}}"><i class="fa fa-key" aria-hidden="true"></i>Change Password</a></li>
 
                 </ul>
               </div>
