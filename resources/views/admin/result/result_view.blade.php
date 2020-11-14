@@ -32,7 +32,7 @@
                     <tr>
                       <th>Course Duration : </th>
                       <td>{{$student->course_duration}} Months</td>
-                    </tr>                   
+                    </tr>
                     <tr>
                       <th>Date Of Admission : </th>
                       <td>{{$student->registration_date}}</td>
@@ -51,14 +51,14 @@
                         <th>Examination Date : </th>
                         <td>{{$student->exam_start_date}} To {{$student->exam_end_date}}</td>
                     </tr>
-  
+
                     <tr>
                         <th>Result : </th>
                         <td>
                             @if ($student->result_status == '1')
                                 <a class="btn btn-success">Passed</a>
                             @else
-                                <a class="btn btn-danger">Fail</a>                                
+                                <a class="btn btn-danger">Fail</a>
                             @endif
                         </td>
                     </tr>
@@ -69,6 +69,10 @@
                     <tr>
                         <th>Percentage : </th>
                         <td>{{$student->percentage}}</td>
+                    </tr>
+                    <tr>
+                        <th>Passing Year : </th>
+                        <td>{{$student->passing_year}}</td>
                     </tr>
                   </table>
                 </div>
@@ -89,7 +93,7 @@
  @endsection
 
 @section('script')
-     
 
-    
+
+
  @endsection

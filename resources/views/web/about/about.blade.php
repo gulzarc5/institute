@@ -30,12 +30,12 @@
 			                <div class="about-content mb-30">
 			                    <div class="section-title section-title-green mb-10">
 			                        <h2>About <span>Us</span></h2>
-			                        <p>Thank you for visiting <strong>RISING GLOBE TECHNOLOGY & MANAGENENT, RGTM, Academy for IT & Management</strong></p>                      
+			                        <p>Thank you for visiting <strong>RISING GLOBE TECHNOLOGY & MANAGEMENT, RGTM, Academy for IT & Management</strong></p>                      
 			                    </div>
 			                    <p> RGTM was setup on 02.08.2017 with goal to serve Information Technology. It was started up as a partnership venture and Regd. as Educational Societies under Govt. of Assam Act I.P of 1932 & Act XXI OF 1860, bearing Registration No-RF/HAI/183/A/37 of 2017-2018. It is also ISO 9001:2015 Certified Institution under Govt. of India.<br>
 								It believes in the foundation of technology that computer science has brought new opportunities and challenges to traditional study style, and has changed the foundational concepts in education.</p><br>
 
-								<p><strong>RISING GLOBE TECHNOLOGY & MANAGENENT, RGTM, Academy for IT & Management</strong>, is started for computer Software, Hardware, Management and Vocational Programs.  And Courses at RGTM are specially designed to help the semi urban or rural youth strengthen their skill sets & employability value in the job market as soon as they finish schooling. We have providing <strong>Certificate & Diploma in Computer Software, Hardware & Networking, Fashion Designing, Beautician, Cutting & Tailoring, NTT, NPTT and English Speaking</strong>. And the team of experts who teaches student in modern technique and providing live training projects to students for better understanding. We also have top-level labs which are spacious and well equipped with latest technology.</p>
+								<p><strong>RISING GLOBE TECHNOLOGY & MANAGEMENT, RGTM, Academy for IT & Management</strong>, is started for computer Software, Hardware, Management and Vocational Programs.  And Courses at RGTM are specially designed to help the semi urban or rural youth strengthen their skill sets & employability value in the job market as soon as they finish schooling. We have providing <strong>Certificate & Diploma in Computer Software, Hardware & Networking, Fashion Designing, Beautician, Cutting & Tailoring, NTT, NPTT and English Speaking</strong>. And the team of experts who teaches student in modern technique and providing live training projects to students for better understanding. We also have top-level labs which are spacious and well equipped with latest technology.</p>
 			                </div>
 			            </div>
 			            <div class="col-lg-12 col-md-12">
@@ -44,7 +44,7 @@
 			                        <h2>Director <span>Message</span></h2>
 			                        <p><strong>“A good education is the first step to building a stable career”</strong></p>                       
 			                    </div>
-			                    <p> It is my privilege to welcome you to <strong>RGTM, Academy for IT & Management</strong> and invite you to explore the multidimensional facets of this Technical Institute using the official website. The Institute has marked its presence as a leading teaching Institute. The Institute challenging and inspiring environment designed to mould students into leaders of tomorrow. The Institute is headed by a competent well experienced dedicated and devoted faculty.</p><br>
+			                    <p> It is my privilege to welcome you to <strong>RGTM, Academy for IT & Management</strong> and invite you to explore the multidimensional facts of this Technical Institute using the official website. The Institute has marked its presence as a leading teaching Institute. The Institute challenging and inspiring environment designed to mould students into leaders of tomorrow. The Institute is headed by a competent well experienced dedicated and devoted faculty.</p><br>
 
 			                    <p> The key to our success depends on the dedication of each individual. We need to work hard to maintain excellence in teaching in order to compete with other Technological Institutes. The Institute is committed to equity and promoting talent without any prejudice.</p><br>
 
@@ -69,7 +69,7 @@
 			            <div class="col-lg-6 col-md-6">
 			                <div class="about-content">
 			                    <div class="section-title section-title-green mb-10">
-			                        <h2>Our <span>Facility</span></h2>                      
+			                        <h2>Our <span>Faculty</span></h2>                      
 			                    </div>
 			                    <p> The faculty of<strong>RGTM, Academy for IT & Management</strong> is carefully selected team who are not only well qualified but highly dedicated to their profession. They walk the extra mile through personal mentoring. We have a team of excellent faculty with impeccable credentials and excellent qualification.</p>
 			                </div>

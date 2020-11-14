@@ -21,7 +21,7 @@
 
             </div>
 	        <div>
-                @if (isset($student) && !empty($student))                    
+                @if (isset($student) && !empty($student))
                     <div class="x_content">
                         {{ Form::open(['method' => 'post','route'=>'admin.student_result_update']) }}
                         <input type="hidden" name="result_id" value="{{$student->id}}">
@@ -46,7 +46,7 @@
                             <label for="name">Course Duration</label>
                             <input class="form-control"  type="text" disabled value="{{$student->course_duration}} Months">
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="s_date">Exam Start Date</label>
                             <input class="form-control" name="s_date" type="date" required value="{{$student->exam_start_date}}">
@@ -63,6 +63,16 @@
                             @if($errors->has('e_date'))
                                 <span class="invalid-feedback" role="alert" style="color:red">
                                     <strong>{{ $errors->first('e_date') }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passing_year">Result Date</label>
+                            <input class="form-control" name="passing_year" type="date" value="{{$student->passing_year}}" required>
+                            @if($errors->has('passing_year'))
+                                <span class="invalid-feedback" role="alert" style="color:red">
+                                    <strong>{{ $errors->first('passing_year') }}</strong>
                                 </span>
                             @enderror
                         </div>
@@ -103,10 +113,10 @@
                         </div>
 
                         <div class="form-group">
-                            {{ Form::submit('Submit', array('class'=>'btn btn-success')) }}	 
-                            <a href="#" onclick="window.close()" class="btn btn-danger">Close</a>               	
+                            {{ Form::submit('Submit', array('class'=>'btn btn-success')) }}
+                            <a href="#" onclick="window.close()" class="btn btn-danger">Close</a>
                         </div>
-                        {{ Form::close() }}	  
+                        {{ Form::close() }}
                     </div>
                 @endif
 	        </div>
@@ -138,7 +148,7 @@
                     }else{
                         $("#grade").html('<label for="grade">Student grade</label><input class="form-control" name="grade" type="text" value="D" disabled style="color: white;font-weight: bold;background-color: red;">');
                         $("#status").html('<label for="status">Result Status</label><input class="form-control" name="status" type="text" value="Fail" disabled style="color: red;font-weight: bold;">');
-                    }     
+                    }
                 }
             })
          });

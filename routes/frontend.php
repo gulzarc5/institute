@@ -3,6 +3,7 @@
     Route::group(['namespace' => 'Web'],function(){
         Route::get('/result','ResultController@resultFormView')->name('web.result.result'); 
         Route::post('/result/view','ResultController@resultView')->name('web.result.view'); 
+        Route::post('/send/mail','ResultController@sendMail')->name('web.send_mail'); 
     });
     Route::get('/', function () {
     return view('web.index');

@@ -52,9 +52,9 @@ class StudentController extends Controller
         if ($student_insert) {
             $length = 5 - intval(strlen((string) $student_insert));
             $student_id = null;
-                for ($i=0; $i < $length; $i++) { 
+                for ($i=0; $i < $length; $i++) {
                     $student_id.='0';
-                } 
+                }
                 $student_id = "RGTM".$student_id.$student_insert;
             DB::table('student')
             ->where('id',$student_insert)
@@ -66,7 +66,7 @@ class StudentController extends Controller
         } else {
             return redirect()->back()->with('error','Something Went Wrong Please Try Again');
         }
-        
+
     }
 
     public function studentList()
@@ -147,7 +147,7 @@ class StudentController extends Controller
         } else {
             return redirect()->back()->with('error','Something Went Wrong Please Try Again');
         }
-        
+
     }
 
     public function studentAddResultForm($id)
@@ -169,9 +169,10 @@ class StudentController extends Controller
     {
         $request->validate([
             'student_id' => 'required',
-            's_date' => 'required',
-            'e_date' => 'required',
+            's_date' => 'required|date_format:Y-m-d',
+            'e_date' => 'required|date_format:Y-m-d',
             'percentage' => 'numeric|required',
+            'passing_year' => 'required|date_format:Y-m-d',
         ]);
         $s_date = $request->input('s_date');
         $e_date = $request->input('e_date');
@@ -188,10 +189,10 @@ class StudentController extends Controller
             } else if ($percentage >= 33) {
                 $grade = "C";
             }else{
-                $grade = "D"; 
+                $grade = "D";
                 $result_status = '2';
             }
-            
+
             $student = DB::table('student')
             ->select('student.*','course.name as course_name','course.duration as course_duration')
             ->leftjoin('course','course.id','=','student.course_id')
@@ -208,6 +209,7 @@ class StudentController extends Controller
                         'grade' => $grade,
                         'result_status' => $result_status,
                         'percentage' => $percentage,
+                        'passing_year' => $request->input('passing_year'),
                         'created_at' => Carbon::now()->setTimezone('Asia/Kolkata')->toDateTimeString(),
                         'updated_at' => Carbon::now()->setTimezone('Asia/Kolkata')->toDateTimeString(),
                     ]);
@@ -217,11 +219,11 @@ class StudentController extends Controller
                 } else {
                     return redirect()->back()->with('error','Something Went Wrong Please Try Again');
                 }
-                
+
             } else {
                 return redirect()->back()->with('error','Something Went Wrong Please Try Again');
             }
-            
+
         }
     }
 
@@ -237,6 +239,7 @@ class StudentController extends Controller
             ->leftjoin('student','student.id','=','student_result.student_id')
             ->where('student_result.student_id',$id)
             ->first();
+
         return view('admin.result.result_view',compact('student'));
     }
 
@@ -259,9 +262,10 @@ class StudentController extends Controller
     {
         $request->validate([
             'result_id' => 'required',
-            's_date' => 'required',
-            'e_date' => 'required',
+            's_date' => 'required|date_format:Y-m-d',
+            'e_date' => 'required|date_format:Y-m-d',
             'percentage' => 'numeric|required',
+            'passing_year' => 'required|date_format:Y-m-d',
         ]);
         $s_date = $request->input('s_date');
         $e_date = $request->input('e_date');
@@ -278,10 +282,10 @@ class StudentController extends Controller
             } else if ($percentage >= 33) {
                 $grade = "C";
             }else{
-                $grade = "D"; 
+                $grade = "D";
                 $result_status = '2';
-            }            
-            
+            }
+
             $result_update = DB::table('student_result')
                 ->where('id',$request->input('result_id'))
                 ->update([
@@ -290,6 +294,7 @@ class StudentController extends Controller
                     'grade' => $grade,
                     'result_status' => $result_status,
                     'percentage' => $percentage,
+                    'passing_year' => $request->input('passing_year'),
                     'updated_at' => Carbon::now()->setTimezone('Asia/Kolkata')->toDateTimeString(),
                 ]);
             $result =  DB::table('student_result')

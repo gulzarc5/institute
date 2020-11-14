@@ -34,14 +34,18 @@
             <div class="col-lg-5">
                 <div class="contact-form">
                     <div class="contact-title mb-45">
-                        <h2>Stay <span>Connected</span></h2>
+						<h2>Stay <span>Connected</span></h2>
+						@if (Session::has('message'))
+						<p class="alert alert-success">Thank You For Sending Us a Query We Will Back To You Soon</p>
+						@endif
                     </div>
-                    <form id="contact-form" action="http://demo.hasthemes.com/glaxdu-v1/glaxdu/assets/php/mail.php" method="post">
-                        <input name="name" placeholder="Name*" type="text">
-                        <input name="email" placeholder="Email*" type="email">
-                        <input name="phone" placeholder="Phone*" type="number">
-                        <input name="subject" placeholder="Subject*" type="text">
-                        <textarea name="message" placeholder="Message"></textarea>
+                    <form method="post" action="{{route('web.send_mail')}}">       
+						@csrf      
+                        <input name="name" placeholder="Name*" type="text" required>
+                        <input name="email" placeholder="Email*" type="email" required>
+                        <input name="phone" placeholder="Phone*" type="number" required>
+                        <input name="subject" placeholder="Subject*" type="text" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
 	                    <p class="form-messege"></p>
                         <button class="submit btn-style" type="submit">SEND MESSAGE</button>
                     </form>
@@ -50,6 +54,15 @@
         </div>
     </div>
 </div>
-    	@endsection   
+@endsection  
+
+@section('script')
+
+	@if (Session::has('message'))
+		<script>
+			$("html, body").animate({ scrollTop: 250 }, "slow");
+		</script>	
+	@endif
+@endsection
 
       

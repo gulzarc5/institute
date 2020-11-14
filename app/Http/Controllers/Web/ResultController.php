@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
 use Carbon\Carbon;
+use Mail;
 
 class ResultController extends Controller
 {
@@ -36,5 +37,24 @@ class ResultController extends Controller
             return redirect()->route('web.result.result')->with('error','Sory Student Data Not Found !! . Please Check Result With Correct Student Details');
         }
         
+    }
+
+    public function sendMail(Request $request)
+    {
+        // $to_name = 'Rising Admin';
+        // $to_email = 'ikbalahmed123@gmail.com';
+        // $data = [
+        //     'name' => $request->input('name'),
+        //     'email'=> $request->input('email'),
+        //     'phone'=> $request->input('phone'),
+        //     'subject'=> $request->input('subject'),
+        //     'textdata'=> $request->input('message'),
+        //     ];
+        // Mail::send('web.email.mail_view', $data, function($message) use ($to_name, $to_email) {
+        //     $message->to($to_email, $to_name)
+        //     ->subject('Rising Globe Contact Request');
+        //     $message->from('risingcontact@rgtmedu.com','Rising G');
+        // });
+       return redirect()->back()->with('message','ok');
     }
 }

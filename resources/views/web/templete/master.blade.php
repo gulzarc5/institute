@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Rising Globe techonology & Managment</title>
+    <title>Rising Globe Technology & Management</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('web/img/favicon.png')}}">    
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('web/img/logo/icon.png')}}">    
     <!-- ===================== CSS ======================= -->   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('web/css/bootstrap.min.css')}}">    

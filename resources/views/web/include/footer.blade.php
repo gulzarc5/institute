@@ -53,17 +53,17 @@
             <div class="footer-bottom pt-15 pb-15">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-12">
+                        <div class="col-lg-8 col-md-12">
                             <div class="copyright">
                                 <p>
                                     Copyright ©
-                                    <a href="#">CareerON</a>
+                                    <a href="#" style="color: #ff9900; font-weight: bold;">Rising Globe Technology & Management</a>
                                     . All Right Reserved  ||  Developed By
-                                    <a href="http://webinfotech.net.in">Webinfotech</a>
+                                    <a href="https://www.linkedin.com/in/gulzar-ahmed-choudhury-0a028698/" style="color: #ff9900; font-weight: bold;">Gulzar Choudhury</a>
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12">
+                        <div class="col-lg-4 col-md-12">
                             <div class="footer-menu-social">
                                 <div class="footer-social">
                                     <ul>
