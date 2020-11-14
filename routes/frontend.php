@@ -1,6 +1,10 @@
 <?php
         
-
+    Route::group(['namespace' => 'Web'],function(){
+        Route::get('/result','ResultController@resultFormView')->name('web.result.result'); 
+        Route::post('/result/view','ResultController@resultView')->name('web.result.view'); 
+        Route::post('/send/mail','ResultController@sendMail')->name('web.send_mail'); 
+    });
     Route::get('/', function () {
     return view('web.index');
     })->name('web.index');
@@ -17,9 +21,7 @@
         return view('web.gallery.gallery');
     })->name('web.gallery.gallery');
 
-    Route::get('/Result', function () {
-    return view('web.result.result');
-    })->name('web.result.result'); 
+    
 
     Route::get('/Contact', function () {
         return view('web.contact');

@@ -5,29 +5,37 @@
   <div class="right_col" role="main">
     <!-- top tiles -->
     <div class="row tile_count">
-      <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
-        <div class="count green">0</div>
+      <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-user"></i> Total Student</span>
+        <div class="count green">
+          @if (isset($total_student))
+              {{$total_student}}
+          @endif
+        </div>
       </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-clock-o"></i> Total Sellers</span>
-        <div class="count green">0</div>
+      <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-clock-o"></i> Result Declared</span>
+        <div class="count green">
+          @if (isset($result_declared))
+              {{$result_declared}}
+          @endif
+        </div>
       </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-          <span class="count_top"><i class="fa fa-user"></i> Total Books</span>
-          <div class="count green">0</div>
+      <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+          <span class="count_top"><i class="fa fa-user"></i> Course Runing </span>
+          <div class="count green">
+            @if (isset($course_runing))
+                {{$course_runing}}
+            @endif
+          </div>
       </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-user"></i> Total Projects</span>
-        <div class="count green">0</div>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-user"></i> Total Megazine</span>
-        <div class="count green">0</div>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-        <span class="count_top"><i class="fa fa-user"></i> Total Quiz</span>
-        <div class="count green">0</div>
+      <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-user"></i> Total Course</span>
+        <div class="count green">
+            @if (isset($total_course))
+                {{$total_course}}
+            @endif
+        </div>
       </div>
       
     </div>
@@ -39,38 +47,48 @@
               <div class="x_content">
                  {{--//////////// Last Ten Sellers //////////////--}}
                  <div class="table-responsive">
-                    <h2>Last 10 Registered Sellers</h2>
+                    <h2>Last 10 Declared Results</h2>
                     <table class="table table-striped jambo_table bulk_action">
                         <thead>
                             <tr class="headings">                
                                 <th class="column-title">Sl No. </th>
                                 <th class="column-title">Name</th>
-                                <th class="column-title">Email</th>
-                                <th class="column-title">Mobile No</th>
-                                <th class="column-title">Varification Status</th>
-                                <th class="column-title">Date</th>
+                                <th class="column-title">Course</th>
+                                <th class="column-title">Percentage</th>
+                                <th class="column-title">Grade</th>
+                                <th class="column-title">Status</th>
                             </tr>
                         </thead>
 
                         <tbody>
-                          @if (isset($last_seller) && !empty($last_seller) ).
+                          @if (isset($last_ten_results) && !empty($last_ten_results) ).
                           @php
                               $count_seller = 1;
                           @endphp
-                              @foreach ($last_seller as $item)
+                              @foreach ($last_ten_results as $item)
                                 <tr>
                                   <td>{{$count_seller++}}</td>
-                                  <td>{{$item->name}}</td>
-                                  <td>{{$item->email}}</td>
-                                  <td>{{$item->mobile}}</td>
+                                  <td>{{$item->s_name}}</td>
+                                  <td>{{$item->course_name}}</td>
+                                  <td>{{$item->percentage}}</td>
                                   <td>
-                                    @if ($item->seller_approved_status == '2')
-                                      <a class="btn btn-success">Approved</a>
+                                    @if ($item->grade == 'A')
+                                      <a class="btn btn-primary">A</a>
+                                    @elseif ($item->grade == 'B')
+                                      <a class="btn btn-success">B</a>
+                                    @elseif ($item->grade == 'C')
+                                      <a class="btn btn-warning">C</a>
                                     @else
-                                      <a class="btn btn-danger">Not Approved</a>
+                                      <a class="btn btn-danger">D</a>
                                     @endif
                                   </td>
-                                  <td>{{ \Carbon\Carbon::parse($item->created_at)->toDayDateTimeString()}}</td>
+                                  <td>
+                                    @if ($item->result_status == '1')
+                                      <a class="btn btn-success">Pass</a>
+                                    @else
+                                      <a class="btn btn-danger">Fail</a>
+                                    @endif
+                                  </td>
                                 </tr>
                               @endforeach
                           @endif

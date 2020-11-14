@@ -22,7 +22,7 @@
             </div>
 	        <div>
 	            <div class="x_content">
-	            	{{ Form::open(['method' => 'post','route'=>'admin.course_insert','enctype'=>'multipart/form-data']) }}
+	            	{{ Form::open(['method' => 'post','route'=>'admin.course_insert']) }}
 
                     <div class="form-group">
 	            		<label for="name">Course Name</label>
@@ -43,17 +43,6 @@
 		                    </span>
 		              	@enderror
 	            	</div>
-
-                    <div class="form-group">
-	            		<label for="total_exam">How Many Exam In This Course</label>
-                        <input class="form-control" placeholder="Enter Total Exam" name="total_exam" type="number" id="name">
-                        @if($errors->has('total_exam'))
-	                    	<span class="invalid-feedback" role="alert" style="color:red">
-		                        <strong>{{ $errors->first('total_exam') }}</strong>
-		                    </span>
-		              	@enderror
-	            	</div>
-
 	            	<div class="form-group">
                         {{ Form::submit('Submit', array('class'=>'btn btn-success')) }}	                	
 	            	</div>
@@ -83,7 +72,6 @@
                                     <th class="column-title">Sl No. </th>
                                     <th class="column-title">Name</th>
                                     <th class="column-title">Duration</th>
-                                    <th class="column-title">Total Exam</th>
                                     <th class="column-title">Action</th>
                             </thead>
 
@@ -98,10 +86,9 @@
                                 <tr class="even pointer">
                                     <td class=" ">{{ $count++ }}</td>
                                     <td class=" ">{{ $item->name }}</td>
-                                    <td>{{ $item->duration}} Months</td>                                    
-                                    <td>{{ $item->total_exam}} Exams</td>                                	
+                                    <td>{{ $item->duration}} Months</td>                              	
                                     <td class=" ">
-                                       <a href="#" class="btn btn-warning">Edit</a>
+                                       <a href="{{route('admin.course_edit',['course_id'=>encrypt($item->id)])}}" class="btn btn-warning">Edit</a>
                                     </td>
                                 </tr>
                                 @endforeach
