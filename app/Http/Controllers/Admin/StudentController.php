@@ -289,8 +289,8 @@ class StudentController extends Controller
             $result_update = DB::table('student_result')
                 ->where('id',$request->input('result_id'))
                 ->update([
-                    'exam_start_date' => $s_date,
-                    'exam_end_date' => $e_date,
+                    // 'exam_start_date' => $s_date,
+                    // 'exam_end_date' => $e_date,
                     'grade' => $grade,
                     'result_status' => $result_status,
                     'percentage' => $percentage,

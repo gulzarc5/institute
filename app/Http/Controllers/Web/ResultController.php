@@ -29,14 +29,22 @@ class ResultController extends Controller
         if ($student_check > 0) {
             $student = DB::table('student')->where('student_id',$student_id)->first();
             $result = null;
+            $qr_string = "Registration No : $student->student_id\nName : $student->name \nFather Name : $student->father_name \nDate Of Birth : $student->dob\n";
             if ($student) {
                 $result = DB::table('student_result')->where('student_id',$student->id)->first();
+                $result_status = "Fail";
+                if ($result->result_status == '1'){
+                    $result_status = "Pass";
+                }
+
+                $qr_string.="Course Name : $result->course_name\nCourse Duration : $result->course_duration\nResult : $result_status\nGrade : $result->grade\nPercentage : $result->percentage";
             }
-            return view('web.result.result',compact('student','result'));
+
+            return view('web.result.result',compact('student','result','qr_string'));
         } else {
             return redirect()->route('web.result.result')->with('error','Sory Student Data Not Found !! . Please Check Result With Correct Student Details');
         }
-        
+
     }
 
     public function sendMail(Request $request)

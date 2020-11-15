@@ -43,20 +43,26 @@
 					<div class="col-lg-10 col-md-12 mx-auto">
 						<div class=" mb-30" style="font-weight: bold; font-size: 18px;">
 							<div class="row" >
-								<div class="col-md-6 marg_div">
-									<p class="marg_p"><strong>Student Name : </strong>{{$student->name}}</p>
+                                <div class="col-md-8" style="padding: 0;">
+                                    <div class="col-md-12 marg_div">
+                                        <p class="marg_p"><strong>Student Name : </strong>{{$student->name}}</p>
+                                    </div>
+                                    <div class="col-md-12 marg_div">
+                                        <p class="marg_p"><strong>Date of Admission : </strong>{{$student->registration_date}}</p>
+                                    </div>
+                                    <div class="col-md-6 marg_div">
+                                        <p class="marg_p"><strong>Father Name : </strong>{{$student->father_name}}</p>
+                                    </div>
+                                    <div class="col-md-6 marg_div">
+                                        @if (isset($result) && !empty($result))
+                                        <p class="marg_p"><strong>Duration : </strong>{{$result->course_duration}} Months</p>
+                                        @endif
+                                    </div>
                                 </div>
-                                <div class="col-md-6 marg_div">
-									<p class="marg_p"><strong>Date of Admission : </strong>{{$student->registration_date}}</p>
+                                <div class="col-md-4 marg_div">
+									{!!QrCode::generate("$qr_string")!!}
                                 </div>
-                                <div class="col-md-6 marg_div">
-									<p class="marg_p"><strong>Father Name : </strong>{{$student->father_name}}</p>
-								</div>
-								<div class="col-md-6 marg_div">
-                                    @if (isset($result) && !empty($result))
-									<p class="marg_p"><strong>Duration : </strong>{{$result->course_duration}} Months</p>
-                                    @endif
-								</div>
+
                                 @if (isset($result) && !empty($result))
                                     <div class="col-md-12 marg_div">
                                         <p class="marg_p"><strong>Course : </strong>{{$result->course_name}}</p>
