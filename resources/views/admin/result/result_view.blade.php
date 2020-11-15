@@ -47,10 +47,10 @@
                         <th>Registration Id : </th>
                         <td>{{$student->student_registration_id}} </td>
                     </tr>
-                    <tr>
+                    {{-- <tr>
                         <th>Examination Date : </th>
                         <td>{{$student->exam_start_date}} To {{$student->exam_end_date}}</td>
-                    </tr>
+                    </tr> --}}
 
                     <tr>
                         <th>Result : </th>

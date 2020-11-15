@@ -169,16 +169,16 @@ class StudentController extends Controller
     {
         $request->validate([
             'student_id' => 'required',
-            's_date' => 'required|date_format:Y-m-d',
-            'e_date' => 'required|date_format:Y-m-d',
+            // 's_date' => 'required|date_format:Y-m-d',
+            // 'e_date' => 'required|date_format:Y-m-d',
             'percentage' => 'numeric|required',
             'passing_year' => 'required|date_format:Y-m-d',
         ]);
-        $s_date = $request->input('s_date');
-        $e_date = $request->input('e_date');
-        if (Carbon::parse($s_date)->gt(Carbon::parse(Carbon::parse($e_date)))){
-            return redirect()->back()->with('error','Please Select Exam End Date Greater Then Exam Start Date');
-        }else{
+        // $s_date = $request->input('s_date');
+        // $e_date = $request->input('e_date');
+        // if (Carbon::parse($s_date)->gt(Carbon::parse(Carbon::parse($e_date)))){
+        //     return redirect()->back()->with('error','Please Select Exam End Date Greater Then Exam Start Date');
+        // }else{
             $percentage =  $request->input('percentage');
             $result_status = '1';
             $grade = "D";
@@ -204,8 +204,8 @@ class StudentController extends Controller
                         'student_id' => $student->id,
                         'course_name' => $student->course_name,
                         'course_duration' => $student->course_duration,
-                        'exam_start_date' => $s_date,
-                        'exam_end_date' => $e_date,
+                        // 'exam_start_date' => $s_date,
+                        // 'exam_end_date' => $e_date,
                         'grade' => $grade,
                         'result_status' => $result_status,
                         'percentage' => $percentage,
@@ -224,7 +224,7 @@ class StudentController extends Controller
                 return redirect()->back()->with('error','Something Went Wrong Please Try Again');
             }
 
-        }
+        // }
     }
 
     public function studentResultView($id)
@@ -262,16 +262,16 @@ class StudentController extends Controller
     {
         $request->validate([
             'result_id' => 'required',
-            's_date' => 'required|date_format:Y-m-d',
-            'e_date' => 'required|date_format:Y-m-d',
+            // 's_date' => 'required|date_format:Y-m-d',
+            // 'e_date' => 'required|date_format:Y-m-d',
             'percentage' => 'numeric|required',
             'passing_year' => 'required|date_format:Y-m-d',
         ]);
-        $s_date = $request->input('s_date');
-        $e_date = $request->input('e_date');
-        if (Carbon::parse($s_date)->gt(Carbon::parse(Carbon::parse($e_date)))){
-            return redirect()->back()->with('error','Please Select Exam End Date Greater Then Exam Start Date');
-        }else{
+        // $s_date = $request->input('s_date');
+        // $e_date = $request->input('e_date');
+        // if (Carbon::parse($s_date)->gt(Carbon::parse(Carbon::parse($e_date)))){
+        //     return redirect()->back()->with('error','Please Select Exam End Date Greater Then Exam Start Date');
+        // }else{
             $percentage =  $request->input('percentage');
             $result_status = '1';
             $grade = "D";
@@ -305,6 +305,6 @@ class StudentController extends Controller
             } else {
                 return redirect()->back()->with('error','Something Went Wrong Please Try Again');
             }
-        }
+        // }
     }
 }

@@ -47,7 +47,7 @@
                             <input class="form-control"  type="text" disabled value="{{$student->course_duration}} Months">
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="s_date">Exam Start Date</label>
                             <input class="form-control" name="s_date" type="date" required value="{{$student->exam_start_date}}">
                             @if($errors->has('s_date'))
@@ -65,7 +65,7 @@
                                     <strong>{{ $errors->first('e_date') }}</strong>
                                 </span>
                             @enderror
-                        </div>
+                        </div> --}}
 
                         <div class="form-group">
                             <label for="passing_year">Result Date</label>
@@ -79,7 +79,7 @@
 
                         <div class="form-group">
                             <label for="percentage">Enter Percentage</label>
-                            <input class="form-control" name="percentage" type="number" cast="any" placeholder="Enter Marks In Percentage" id="percentage"  value="{{$student->percentage}}"  required>
+                            <input class="form-control" step="any" name="percentage" type="number" cast="any" placeholder="Enter Marks In Percentage" id="percentage"  value="{{$student->percentage}}"  required>
                             @if($errors->has('percentage'))
                                 <span class="invalid-feedback" role="alert" style="color:red">
                                     <strong>{{ $errors->first('percentage') }}</strong>

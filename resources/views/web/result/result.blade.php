@@ -67,9 +67,9 @@
 									<p class="marg_p"><strong>Registration No : </strong>{{$student->student_id}}</p>
                                 </div>
 								<div class="col-md-6 marg_div">
-                                    @if (isset($result) && !empty($result))
+                                    {{-- @if (isset($result) && !empty($result))
 									<p class="marg_p"><strong>Date of Examination : </strong>{{$result->exam_start_date}} to {{$result->exam_end_date}}</p>
-                                    @endif
+                                    @endif --}}
                                 </div>
 								<div class="col-md-4 marg_div">
 									<p class="marg_p"><strong>Date of Birth : </strong>{{$student->dob}}</p>
@@ -95,7 +95,7 @@
 									<p class="bdr-bt marg_p"><strong>Grade : </strong>{{$result->grade}}</p>
 								</div>
 								<div class="col-md-4 marg_div">
-									<p class="bdr-bt marg_p"><strong>Reslt Date : </strong>{{$result->passing_year}}</p>
+									<p class="bdr-bt marg_p"><strong>Passing Year : </strong>{{ Carbon\Carbon::parse($result->passing_year)->format('F Y')}}</p>
 								</div>
                                 @else
                                 <div class="col-md-12 marg_div">
